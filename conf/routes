@@ -18,3 +18,8 @@ POST    /user/create                controllers.UserController.create
 POST    /user/update                controllers.UserController.update
 # Mapping to /user/remove/<number>
 POST    /user/remove/:id            controllers.UserController.remove(id: Long)
+# JSON API
+GET         /json/list              controllers.JsonController.list
+POST        /json/create            controllers.JsonController.create
+POST        /json/update            controllers.JsonController.update
+POST        /json/remove/:id        controllers.JsonController.remove(id: Long)

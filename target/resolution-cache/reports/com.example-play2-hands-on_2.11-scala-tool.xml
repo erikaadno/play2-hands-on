@@ -7,15 +7,15 @@
 		revision="1.0-SNAPSHOT"
 		conf="scala-tool"
 		confs="universal, universal-docs, universal-src, compile, runtime, test, provided, optional, windows, docker, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20180202114503"/>
+		date="20180202143855"/>
 	<dependencies>
 		<module organisation="org.scala-lang" name="scala-compiler">
-			<revision name="2.11.11" status="release" pubdate="20170414045049" resolver="public" artresolver="public" homepage="http://www.scala-lang.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, optional, optional(default), master" position="0">
+			<revision name="2.11.11" status="release" pubdate="20170414045049" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, optional, optional(default), master" position="0">
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
-				<metadata-artifact status="successful" details="" size="2370" time="420" location="/Users/erika.ando/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.11.11.xml" searched="true" original-local-location="/Users/erika.ando/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.11.11.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.11/scala-compiler-2.11.11.pom"/>
+				<metadata-artifact status="no" details="" size="3262" time="0" location="/Users/erika.ando/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.11.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.11/scala-compiler-2.11.11.pom"/>
 				<caller organisation="com.example" name="play2-hands-on_2.11" conf="scala-tool" rev="2.11.11" rev-constraint-default="2.11.11" rev-constraint-dynamic="2.11.11" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="scala-compiler" type="jar" ext="jar" status="successful" details="" size="15600599" time="2826" location="/Users/erika.ando/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.11.11.jar">
+					<artifact name="scala-compiler" type="jar" ext="jar" status="no" details="" size="15600599" time="0" location="/Users/erika.ando/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.11.11.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.11/scala-compiler-2.11.11.jar"/>
 					</artifact>
 				</artifacts>
@@ -58,12 +58,12 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-reflect">
-			<revision name="2.11.11" status="release" pubdate="20170414045043" resolver="public" artresolver="public" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.11/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+			<revision name="2.11.11" status="release" pubdate="20170414045043" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.11/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
-				<metadata-artifact status="successful" details="" size="1573" time="421" location="/Users/erika.ando/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.11.xml" searched="true" original-local-location="/Users/erika.ando/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.11.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.11/scala-reflect-2.11.11.pom"/>
+				<metadata-artifact status="no" details="" size="2829" time="0" location="/Users/erika.ando/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.11/scala-reflect-2.11.11.pom"/>
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="default, compile, runtime, optional, master" rev="2.11.11" rev-constraint-default="2.11.11" rev-constraint-dynamic="2.11.11" callerrev="2.11.11"/>
 				<artifacts>
-					<artifact name="scala-reflect" type="jar" ext="jar" status="successful" details="" size="4602981" time="1164" location="/Users/erika.ando/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.11.jar">
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="4602981" time="0" location="/Users/erika.ando/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.11.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.11/scala-reflect-2.11.11.jar"/>
 					</artifact>
 				</artifacts>

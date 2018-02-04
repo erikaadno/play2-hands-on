@@ -1,7 +1,3 @@
-/**
-  * Created by erika.ando on 2018/02/04.
-  */
-
 package controllers
 
 import play.api.mvc._
@@ -17,13 +13,30 @@ import slick.driver.H2Driver.api._
 import play.api.libs.json._
 import play.api.libs.functional.syntax._
 
+object JsonController {
+  // UsersRowをJSONに変換するためのWritesを定義
+  implicit val usersRowWritesWrites = (
+    (__ \ "id"       ).write[Long]   and
+    (__ \ "name"     ).write[String] and
+    (__ \ "companyId").writeNullable[Int]
+  )(unlift(UsersRow.unapply))
+}
+
 class JsonController @Inject()(val dbConfigProvider: DatabaseConfigProvider) extends Controller
   with HasDatabaseConfigProvider[JdbcProfile] {
 
   /**
     * 一覧表示
     */
-  def list = TODO
+  import JsonController._
+
+  def list = Action.async { implicit rs =>
+    // IDの昇順にすべてのユーザ情報を取得
+    db.run(Users.sortBy(t => t.id).result).map { users =>
+      // ユーザの一覧をJSONで返す
+      Ok(Json.obj("users" -> users))
+    }
+  }
 
   /**
     * ユーザ登録
